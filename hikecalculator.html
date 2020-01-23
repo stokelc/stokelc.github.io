@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+<title> Javascript HikeCalculator </title>
+        <link rel="stylesheet" href="hikecalculator.css">
+    <script type="text/javascript">
+function hike(){
+
+    var pounds= document.getElementById ("pounds").value; 
+    var trail= document.getElementById("trail").value;
+    
+    var poundstokg= pounds/2.2;
+    var permin= poundstokg*.07;
+    var total= permin * trail;
+    document.getElementById ("empty").innerHTML= total + " calories burned on this hike"
+    
+   
+    }
+    </script>    
+    
+    </head>
+    <body>
+        <h1> JavaScript Hike Calculator</h1>
+        <p>Enter your weight in pounds (including any weight you will be carrying) : <br><br> <input type="number" name="weightinpounds" id="pounds"></p>
+             <p>Choose a Trail</p>
+        <select id="trail">
+        <option value=540>Old Rag</option>
+        <option value=90>Upper Hawksbill</option>
+        <option value=115>Hump Back Mountain</option>
+            <option value=30>Sugar Hollow</option>
+            
+        </select>
+        <br>
+        <br>
+        <div id="empty">
+
+        </div>
+        <button onclick="hike()">
+    Calculate
+        </button>
+        
+    </body>
+</html>

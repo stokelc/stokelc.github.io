@@ -1,0 +1,13 @@
+body {
+    background-color: gray;
+    padding-left: 50px;
+}
+h1  {
+    font-family: sans-serif;
+
+}
+div {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
